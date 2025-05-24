@@ -20,6 +20,7 @@ The receiver computes ( s = c_1^x \mod p ), and then calculates the plaintext me
 logarithm problem in a large prime field, making it secure for encryption.
 
 # Program:
+```
 #include <stdio.h>
 #include <math.h>
 // Function to compute modular exponentiation (base^exp % mod)
@@ -62,6 +63,7 @@ decryptedMessage = (c2 * modExp(c1, p - 1 - privateKeyA, p)) % p;
 printf("Decrypted message: %lld\n", decryptedMessage);
 return 0;
 }
+```
 # Output:
 ![image](https://github.com/user-attachments/assets/e122da51-e5df-4597-a9cf-e04f51c983be)
 
